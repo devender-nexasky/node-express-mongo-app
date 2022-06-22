@@ -1,0 +1,52 @@
+{
+  "name": "shopify-express-boilerplate",
+  "version": "0.0.1",
+  "description": "Shopify Boilerplate Code written in React, Node, Express, MongoDB and GraphQL",
+  "author": {
+    "name": "Harshdeep Singh Hura",
+    "url": "https://harshdeephura.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kinngh/shopify-node-express-mongodb-app.git"
+  },
+  "scripts": {
+    "update": "ncu -u",
+    "update:check": "ncu",
+    "test": "echo \"--> No test specified\"",
+    "dev": "NODE_ENV=dev nodemon server/index.js --watch ./server",
+    "preserve": "npm run build",
+    "build": "vite build --outDir dist/client",
+    "start": "NODE_ENV=prod node server/index.js",
+    "pretty": "prettier --write .",
+    "ngrok:auth": "ngrok authtoken <your-auth-token>",
+    "ngrok": "ngrok http 8081"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.8",
+    "@shopify/app-bridge": "^3.1.1",
+    "@shopify/app-bridge-react": "^3.1.1",
+    "@shopify/app-bridge-utils": "^3.1.1",
+    "@shopify/polaris": "^9.18.0",
+    "@shopify/shopify-api": "^3.1.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cryptr": "^6.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "mongoose": "^6.4.0",
+    "raviger": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "serve-static": "^1.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.3.2",
+    "ngrok": "^4.3.1",
+    "nodemon": "^2.0.16",
+    "npm-check-updates": "^14.0.1",
+    "prettier": "^2.7.1",
+    "vite": "^2.9.12"
+  }
+}
